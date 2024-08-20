@@ -76,12 +76,6 @@ set PATH=%CUDA_PATH%\bin;%CUDA_PATH%\libnvvp;%PATH%
 
 :cuda_build_end
 
-if not "%USE_XPU%"=="1" goto xpu_build_end
-
-set VS2022INSTALLDIR='C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools'
-
-:xpu_build_end
-
 set DISTUTILS_USE_SDK=1
 set PATH=%TMP_DIR_WIN%\bin;%PATH%
 
